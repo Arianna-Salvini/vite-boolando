@@ -10,4 +10,8 @@ export default {
     <main>Main</main>
 </template>
 
-<style></style>
+<style lang="scss">
+main {
+    padding: 3rem 0;
+}
+</style>

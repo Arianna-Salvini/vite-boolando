@@ -10,4 +10,8 @@ export default {
     <div>footer</div>
 </template>
 
-<style></style>
+<style>
+footer {
+    margin-top: 2rem;
+}
+</style>
