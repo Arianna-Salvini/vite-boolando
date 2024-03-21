@@ -1,4 +1,4 @@
-@use './_variables' as *;
+@use './variables' as *;
 
 // Reset Rules
 * {
@@ -9,12 +9,17 @@
 
 // common rules
 body {
-    background-color: var(&bz-light);
+    background-color: $bz-light;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .flex_container {
     display: flex;
-    justify-items: center;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.d_flex {
+    display: flex;
+    justify-content: center;
 }

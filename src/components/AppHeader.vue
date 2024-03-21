@@ -10,7 +10,7 @@ export default {
     <header>
         <nav>
             <div class="container flex_container">
-                <div class="gender_option">
+                <div class="gender_option d_flex">
                     <ul class="gender_list">
                         <li>
                             <a href="#" class="gender woman">Donna</a>
@@ -24,10 +24,10 @@ export default {
 
                     </ul>
                 </div>
-                <div class="logo">
+                <div class="logo d_flex">
                     <img src="/images/boolean-logo.png" alt="" height="20">
                 </div>
-                <div class="navigation_icon">
+                <div class="navigation_icon d_flex">
                     <i class="fa-regular fa-user"></i>
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-bag-shopping"></i>
@@ -38,45 +38,4 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
-header {
-    background-color: var(&bz-primary);
-    height: 3rem;
-
-    & nav {
-        color: var(&bz-light);
-        background-color: var(&bz-primary);
-        height: 3rem;
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        width: 100%;
-        z-index: 9999;
-    }
-
-    .gender_option,
-    .navigation_icon {
-        width: 33%;
-    }
-
-    .logo {
-        width: 34%;
-    }
-
-    .gender_list {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    .gender {
-        color: var(--bz-light);
-        font-size: 0.9rem;
-        padding: 0.3rem;
-        text-decoration: none;
-    }
-
-}
-</style>
+<style lang="scss"></style>

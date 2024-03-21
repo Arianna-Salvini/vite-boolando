@@ -1,2 +1,48 @@
-@use './partials/_variables.scss' as*;
-@use './partials/_utility.scss' as *;
+@use './partials/variables' as *;
+@use './partials/utility';
+
+
+header {
+    height: 3rem;
+
+    nav {
+        color: $bz-light;
+        background-color: $bz-primary;
+        height: 3rem;
+        text-align: center;
+
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+
+        .gender_option,
+        .navigation_icon,
+        .logo {
+            width: calc(100% / 3);
+            line-height: 3rem;
+        }
+
+        .gender_list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .gender {
+            color: $bz-light;
+            font-size: 0.9rem;
+            padding: 0.3rem;
+            text-decoration: none;
+        }
+
+        .navigation_icon {
+            i {
+                padding: 8px;
+            }
+        }
+    }
+
+
+}
