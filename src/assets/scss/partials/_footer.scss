@@ -1,0 +1,43 @@
+@use './variables' as *;
+@use './utility';
+
+.footer_container {
+    background-color: $bz-dark;
+    color: $bz-light;
+    font-size: 0.5rem;
+    padding: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+
+    .name_srl {
+        font-size: 0.7rem;
+        font-weight: 800;
+        padding-bottom: 0.4rem;
+    }
+
+    .infos {
+        display: flex;
+
+        .unodered_list_footer {
+            list-style-type: none;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .find_us {
+        margin-bottom: 0.5rem;
+    }
+
+    .social_icons {
+        font-size: 0.7rem;
+
+        i {
+            padding-right: 0.5rem;
+        }
+    }
+}
