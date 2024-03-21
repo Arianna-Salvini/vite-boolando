@@ -10,7 +10,6 @@ header {
         background-color: $bz-primary;
         height: 3rem;
         text-align: center;
-
         position: fixed;
         width: 100%;
         z-index: 9999;
@@ -22,27 +21,34 @@ header {
             line-height: 3rem;
         }
 
-        .gender_list {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-        }
+        .gender_option {
+            justify-content: flex-end;
 
-        .gender {
-            color: $bz-light;
-            font-size: 0.9rem;
-            padding: 0.3rem;
-            text-decoration: none;
+            .gender_list {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                .gender {
+                    color: $bz-light;
+                    font-size: 0.9rem;
+                    padding: 0.3rem;
+                    text-decoration: none;
+                }
+            }
         }
 
         .navigation_icon {
+            justify-content: flex-start;
+
             i {
                 padding: 8px;
             }
-        }
-    }
 
+        }
+
+    }
 
 }
