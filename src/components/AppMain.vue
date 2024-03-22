@@ -104,7 +104,7 @@ export default {
     <main>
         <div class="container flex_container">
 
-            <ProductCard v-for="product in products" />
+            <ProductCard :product="product" v-for="product in products" />
 
         </div>
     </main>

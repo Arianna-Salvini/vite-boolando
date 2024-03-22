@@ -2,3 +2,96 @@
 @use './utility';
 
 // Card
+
+.card {
+    width: 33%;
+    margin-top: 2rem;
+
+    .product_image {
+        position: relative;
+
+        .item {
+            width: 100%;
+            padding: 0 0.5rem 0;
+        }
+
+        .item_b {
+            width: 100%;
+            padding: 0 0.5rem 0;
+            display: none;
+        }
+
+        .label_position {
+            position: absolute;
+            left: 0.5rem;
+            bottom: 5%;
+        }
+
+        .like {
+            background-color: $bz-light;
+            display: inline;
+            padding: 0.5rem 0.6rem;
+            position: absolute;
+            right: 0.5rem;
+            top: 0.5rem;
+        }
+
+        .discount {
+            background-color: $bz-dark-discount;
+            color: $bz-light;
+            font-size: 0.7rem;
+            padding: 0.3rem;
+        }
+
+        .spacial_label {
+            background-color: $bz-special-label;
+            color: $bz-light;
+            font-size: 0.7rem;
+            padding: 0.3rem;
+        }
+    }
+
+    .product_description {
+        padding-left: 0.5rem;
+
+        .brand,
+        .price {
+            font-size: 0.7rem;
+        }
+
+        .product_name {
+            font-size: 0.8rem;
+        }
+
+        .red {
+            color: $bz-dark-discount;
+            font-weight: 900;
+        }
+
+        .bar_price {
+            text-decoration: line-through;
+            padding: 0.3rem;
+        }
+    }
+}
+
+// Hover
+
+.product_image {
+    .like:hover {
+        color: $bz-dark-discount;
+    }
+
+    &:hover .item_b {
+        display: inline;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+.product_image:hover,
+.product_description:hover {
+    cursor: pointer;
+}
