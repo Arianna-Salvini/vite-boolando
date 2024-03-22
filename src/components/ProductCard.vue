@@ -3,10 +3,7 @@
 export default {
     name: 'ProductCard',
     props: {
-        product: {
-            type: Object,
-        }
-
+        product: Object,
     }
 }
 
@@ -22,8 +19,8 @@ export default {
                 <img class="item_b" :src="product.secondImage" alt="">
             </div>
             <div class="label_position">
-                <span class="discount">{{ product.discount }}</span>
-                <span class="spacial_label">{{ product.specialLabel }}</span>
+                <span class="discount" v-if="product.discount !== null">{{ product.discount }}</span>
+                <span class="spacial_label" v-if="product.specialLabel !== null">{{ product.specialLabel }}</span>
             </div>
             <div class="like">&hearts;</div>
         </div>
