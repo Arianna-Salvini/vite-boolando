@@ -16,6 +16,7 @@ export default {
                     id: 1,
                     firstImage: '/images/1.webp',
                     secondImage: '/images/1b.webp',
+                    liked: true,
                     discount: '-50%',
                     specialLabel: 'Sostenibile',
                     brand: 'Levi\'s',
@@ -24,11 +25,13 @@ export default {
                         discountedPrice: 14.99,
                         originalPrice: 29.99,
                     }
+
                 },
                 {
                     id: 2,
                     firstImage: '/images/2.webp',
                     secondImage: '/images/2b.webp',
+                    liked: false,
                     discount: '-30%',
                     specialLabel: null,
                     brand: 'Guess',
@@ -37,11 +40,13 @@ export default {
                         discountedPrice: 20.99,
                         originalPrice: 29.99,
                     }
+
                 },
                 {
                     id: 3,
                     firstImage: '/images/3.webp',
                     secondImage: '/images/3b.webp',
+                    liked: false,
                     discount: '-30%',
                     specialLabel: null,
                     brand: 'Come Zucchero Filato',
@@ -50,11 +55,13 @@ export default {
                         discountedPrice: 129.99,
                         originalPrice: 184.99,
                     }
+
                 },
                 {
                     id: 4,
                     firstImage: '/images/4.webp',
                     secondImage: '/images/4b.webp',
+                    liked: false,
                     discount: '-50%',
                     specialLabel: 'Sostenibile',
                     brand: 'Levi\'s',
@@ -63,11 +70,13 @@ export default {
                         discountedPrice: 14.99,
                         originalPrice: 29.99,
                     }
+
                 },
                 {
                     id: 5,
                     firstImage: '/images/5.webp',
                     secondImage: '/images/5b.webp',
+                    liked: false,
                     discount: null,
                     specialLabel: null,
                     brand: 'Maya Deluxe',
@@ -81,6 +90,7 @@ export default {
                     id: 6,
                     firstImage: '/images/6.webp',
                     secondImage: '/images/6b.webp',
+                    liked: false,
                     discount: null,
                     specialLabel: 'Sostenibile',
                     brand: 'Esprit',
