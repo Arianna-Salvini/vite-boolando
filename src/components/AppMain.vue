@@ -12,10 +12,10 @@ export default {
             <div class="card">
                 <div class="product_image">
                     <div class="image_box">
-                        <img class="item" src="../../public/images/1.webp" alt="">
+                        <img class="item" src="/images/1.webp" alt="">
                     </div>
                     <div class="image_box">
-                        <img class="item_b" src="../../public/images/1b.webp" alt="">
+                        <img class="item_b" src="/images/1b.webp" alt="">
                     </div>
                     <div class="label_position">
                         <span class="discount">-50%</span>
@@ -35,10 +35,10 @@ export default {
             <div class="card">
                 <div class="product_image">
                     <div class="image_box">
-                        <img class="item" src="../../public/images/2.webp" alt="">
+                        <img class="item" src="/images/2.webp" alt="">
                     </div>
                     <div class="image_box">
-                        <img class="item_b" src="../../public/images/2b.webp" alt="">
+                        <img class="item_b" src="/images/2b.webp" alt="">
                     </div>
                     <div class="label_position">
                         <span class="discount">-30%</span>
@@ -58,10 +58,10 @@ export default {
             <div class="card">
                 <div class="product_image">
                     <div class="image_box">
-                        <img class="item" src="../../public/images/3.webp" alt="">
+                        <img class="item" src="/images/3.webp" alt="">
                     </div>
                     <div class="image_box">
-                        <img class="item_b" src="../../public/images/3b.webp" alt="">
+                        <img class="item_b" src="/images/3b.webp" alt="">
                     </div>
                     <div class="label_position">
                         <span class="discount">-30%</span>
@@ -81,10 +81,10 @@ export default {
             <div class="card">
                 <div class="product_image">
                     <div class="image_box">
-                        <img class="item" src="../../public/images/4.webp" alt="">
+                        <img class="item" src="/images/4.webp" alt="">
                     </div>
                     <div class="image_box">
-                        <img class="item_b" src="../../public/images/4b.webp" alt="">
+                        <img class="item_b" src="/images/4b.webp" alt="">
                     </div>
                     <div class="label_position">
                         <span class="discount">-50%</span>
@@ -104,10 +104,10 @@ export default {
             <div class="card">
                 <div class="product_image">
                     <div class="image_box">
-                        <img class="item" src="../../public/images/5.webp" alt="">
+                        <img class="item" src="/images/5.webp" alt="">
                     </div>
                     <div class="image_box">
-                        <img class="item_b" src="../../public/images/5b.webp" alt="">
+                        <img class="item_b" src="/images/5b.webp" alt="">
                     </div>
                     <div class="label_position">
                         <!-- <span class="discount">-50%</span>
@@ -127,10 +127,10 @@ export default {
             <div class="card">
                 <div class="product_image">
                     <div class="image_box">
-                        <img class="item" src="../../public/images/6.webp" alt="">
+                        <img class="item" src="/images/6.webp" alt="">
                     </div>
                     <div class="image_box">
-                        <img class="item_b" src="../../public/images/6b.webp" alt="">
+                        <img class="item_b" src="/images/6b.webp" alt="">
                     </div>
                     <div class="label_position">
                         <!-- <span class="discount">-50%</span> -->
