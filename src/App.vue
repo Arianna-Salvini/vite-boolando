@@ -2,7 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-import ProductCars from './components/ProductCard.vue'
+import ProductCard from './components/ProductCard.vue'
 
 export default {
   name: 'App',
@@ -11,7 +11,7 @@ export default {
     AppHeader,
     AppMain,
     AppFooter,
-    ProdoctCard,
+    ProductCard,
 
   }
 }
@@ -23,6 +23,8 @@ export default {
   <AppHeader />
 
   <AppMain />
+
+  <ProductCard />
 
   <AppFooter />
 
