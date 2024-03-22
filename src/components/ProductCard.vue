@@ -28,8 +28,10 @@ export default {
             <div class="brand">{{ product.brand }}'s</div>
             <strong class="product_name">{{ product.productName }}</strong>
             <div class="price">
-                <span class="discount_price red">{{ product.price.discountedPrice }}€</span>
-                <span class="product_price bar_price">{{ product.price.originalPrice }}</span>
+                <span class="discount_price red" v-if="product.price.discountedPrice !== null">{{
+                    product.price.discountedPrice }}€</span>
+                <span class="product_price " :class="{ bar_price: product.price.discountedPrice !== null }">{{
+                    product.price.originalPrice }}€</span>
             </div>
         </div>
     </div>
