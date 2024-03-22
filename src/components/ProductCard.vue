@@ -2,13 +2,40 @@
 
 export default {
     name: 'ProductCard',
-}
+    props: {
+        product: {
+            type: Object,
+        }
 
+    }
+}
 
 </script>
 
 <template>
-
+    <div class="card">
+        <div class="product_image">
+            <div class="image_box">
+                <img class="item" :src="product.firstImage" alt="">
+            </div>
+            <div class="image_box">
+                <img class="item_b" :src="product.secondImage" alt="">
+            </div>
+            <div class="label_position">
+                <span class="discount">{{ product.discount }}</span>
+                <span class="spacial_label">{{ product.specialLabel }}</span>
+            </div>
+            <div class="like">&hearts;</div>
+        </div>
+        <div class="product_description">
+            <div class="brand">{{ product.brand }}'s</div>
+            <strong class="product_name">{{ product.productName }}</strong>
+            <div class="price">
+                <span class="discount_price red">{{ product.price.discountedPrice }}€</span>
+                <span class="product_price bar_price">{{ product.price.originalPrice }}</span>
+            </div>
+        </div>
+    </div>
 </template>
 
-<style></style>
+<style lang="scss"></style>

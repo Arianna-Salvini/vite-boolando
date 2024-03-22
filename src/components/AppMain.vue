@@ -7,152 +7,105 @@ export default {
 
     components: {
         ProductCard,
+    },
+
+    data() {
+        return {
+            products: [
+                {
+                    id: 1,
+                    firstImage: '/images/1.webp',
+                    secondImage: '/images/1b.webp',
+                    discount: '-50%',
+                    specialLabel: 'Sostenibile',
+                    brand: 'Levi\'s',
+                    productName: 'RELAXED FIT TEE UNISEX',
+                    price: {
+                        discountedPrice: 14.99,
+                        originalPrice: 29.99,
+                    }
+                },
+                {
+                    id: 2,
+                    firstImage: '/images/2.webp',
+                    secondImage: '/images/2b.webp',
+                    discount: '-30%',
+                    specialLabel: null,
+                    brand: 'Guess',
+                    productName: 'ROSES TEE',
+                    price: {
+                        discountedPrice: 20.99,
+                        originalPrice: 29.99,
+                    }
+                },
+                {
+                    id: 3,
+                    firstImage: '/images/3.webp',
+                    secondImage: '/images/3b.webp',
+                    discount: '-30%',
+                    specialLabel: null,
+                    brand: 'Come Zucchero Filato',
+                    productName: 'VOGLIA DI COLORI PASTELLO',
+                    price: {
+                        discountedPrice: 129.99,
+                        originalPrice: 184.99,
+                    }
+                },
+                {
+                    id: 4,
+                    firstImage: '/images/4.webp',
+                    secondImage: '/images/4b.webp',
+                    discount: '-50%',
+                    specialLabel: 'Sostenibile',
+                    brand: 'Levi\'s',
+                    productName: 'TEE UNISEX',
+                    price: {
+                        discountedPrice: 14.99,
+                        originalPrice: 29.99,
+                    }
+                },
+                {
+                    id: 5,
+                    firstImage: '/images/5.webp',
+                    secondImage: '/images/5b.webp',
+                    discount: null,
+                    specialLabel: null,
+                    brand: 'Maya Deluxe',
+                    productName: 'STRIPE BODICE',
+                    price: {
+                        discountedPrice: null,
+                        originalPrice: 99.99,
+                    }
+                },
+                {
+                    id: 6,
+                    firstImage: '/images/6.webp',
+                    secondImage: '/images/6b.webp',
+                    discount: null,
+                    specialLabel: 'Sostenibile',
+                    brand: 'Esprit',
+                    productName: 'MAGLIONE BLACK',
+                    price: {
+                        discountedPrice: null,
+                        originalPrice: 29.99,
+                    }
+                },
+
+            ]
+        }
     }
 }
+
+
 
 </script>
 
 <template>
     <main>
         <div class="container flex_container">
-            <div class="card">
-                <div class="product_image">
-                    <div class="image_box">
-                        <img class="item" src="/images/1.webp" alt="">
-                    </div>
-                    <div class="image_box">
-                        <img class="item_b" src="/images/1b.webp" alt="">
-                    </div>
-                    <div class="label_position">
-                        <span class="discount">-50%</span>
-                        <span class="spacial_label">Sostenibile</span>
-                    </div>
-                    <div class="like">&hearts;</div>
-                </div>
-                <div class="product_description">
-                    <div class="brand">Levi's</div>
-                    <strong class="product_name">RELAXED FIT TEE UNISEX</strong>
-                    <div class="price">
-                        <span class="discount_price red">14,99 €</span>
-                        <span class="product_price bar_price">29.99 €</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="product_image">
-                    <div class="image_box">
-                        <img class="item" src="/images/2.webp" alt="">
-                    </div>
-                    <div class="image_box">
-                        <img class="item_b" src="/images/2b.webp" alt="">
-                    </div>
-                    <div class="label_position">
-                        <span class="discount">-30%</span>
-                        <!-- <span class="spacial_label">Sostenibile</span> -->
-                    </div>
-                    <div class="like">&hearts;</div>
-                </div>
-                <div class="product_description">
-                    <div class="brand">Guess</div>
-                    <strong class="product_name">ROSES TEE</strong>
-                    <div class="price">
-                        <span class="discount_price red">20,99 €</span>
-                        <span class="product_price bar_price">29,99 €</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="product_image">
-                    <div class="image_box">
-                        <img class="item" src="/images/3.webp" alt="">
-                    </div>
-                    <div class="image_box">
-                        <img class="item_b" src="/images/3b.webp" alt="">
-                    </div>
-                    <div class="label_position">
-                        <span class="discount">-30%</span>
-                        <!-- <span class="spacial_label">Sostenibile</span> -->
-                    </div>
-                    <div class="like">&hearts;</div>
-                </div>
-                <div class="product_description">
-                    <div class="brand">Come Zucchero Filato</div>
-                    <strong class="product_name">VOGLIA DI COLORI PASTELLO</strong>
-                    <div class="price">
-                        <span class="discount_price red">129,99 €</span>
-                        <span class="product_price bar_price">184.99 €</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="product_image">
-                    <div class="image_box">
-                        <img class="item" src="/images/4.webp" alt="">
-                    </div>
-                    <div class="image_box">
-                        <img class="item_b" src="/images/4b.webp" alt="">
-                    </div>
-                    <div class="label_position">
-                        <span class="discount">-50%</span>
-                        <span class="spacial_label">Sostenibile</span>
-                    </div>
-                    <div class="like">&hearts;</div>
-                </div>
-                <div class="product_description">
-                    <div class="brand">Levi's</div>
-                    <strong class="product_name">TEE UNISEX</strong>
-                    <div class="price">
-                        <span class="discount_price red">14,99 €</span>
-                        <span class="product_price bar_price">29.99 €</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="product_image">
-                    <div class="image_box">
-                        <img class="item" src="/images/5.webp" alt="">
-                    </div>
-                    <div class="image_box">
-                        <img class="item_b" src="/images/5b.webp" alt="">
-                    </div>
-                    <div class="label_position">
-                        <!-- <span class="discount">-50%</span>
-                        <span class="spacial_label">Sostenibile</span> -->
-                    </div>
-                    <div class="like">&hearts;</div>
-                </div>
-                <div class="product_description">
-                    <div class="brand">Maya Deluxe</div>
-                    <strong class="product_name">STRIPE BODICE</strong>
-                    <div class="price">
-                        <span class="discount_price"></span>
-                        <span class="product_price red">99.99 €</span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="product_image">
-                    <div class="image_box">
-                        <img class="item" src="/images/6.webp" alt="">
-                    </div>
-                    <div class="image_box">
-                        <img class="item_b" src="/images/6b.webp" alt="">
-                    </div>
-                    <div class="label_position">
-                        <!-- <span class="discount">-50%</span> -->
-                        <span class="spacial_label">Sostenibile</span>
-                    </div>
-                    <div class="like">&hearts;</div>
-                </div>
-                <div class="product_description">
-                    <div class="brand">Esprit</div>
-                    <strong class="product_name">MAGLIONE BLACK</strong>
-                    <div class="price">
-                        <span class="discount_price"></span>
-                        <span class="product_price red">29.99 €</span>
-                    </div>
-                </div>
-            </div>
+
+            <ProductCard v-for="product in products" />
+
         </div>
     </main>
 </template>
