@@ -10,6 +10,7 @@
     "serve": "json-server --watch ./src/db.json"
   },
   "dependencies": {
+    "axios": "^1.6.8",
     "vue": "^3.4.21"
   },
   "devDependencies": {
