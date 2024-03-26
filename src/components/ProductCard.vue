@@ -18,18 +18,19 @@ export default {
         likeToggle() {
             this.product.liked = !this.product.liked
         }
+
+
     }
 }
 
 </script>
 
 <template>
+    <!-- CARD -->
     <div class="card">
         <div class="product_image">
             <div class="image_box">
                 <img class="item" :src="product.firstImage" alt="">
-            </div>
-            <div class="image_box">
                 <img class="item_b" :src="product.secondImage" alt="">
             </div>
             <div class="label_position">
@@ -49,6 +50,17 @@ export default {
             </div>
         </div>
     </div>
+
+    <!-- Modale -->
+
+    <div class="modal">
+        <div class="modal_product_details">
+            <div>{{ product.productName }}</div>
+            <div>{{ product.brand }}</div>
+        </div>
+        <button class="close_modal">&#10005</button>
+    </div>
+
 </template>
 
 <style lang="scss">
@@ -58,5 +70,35 @@ export default {
 
 .like.red_like {
     color: red;
+}
+
+// Model
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .modal_product_details {
+        background-color: antiquewhite;
+        padding: 3rem;
+        border-radius: 2rem;
+    }
+
+    .close_modal {
+        background-color: antiquewhite;
+        padding: 0.2rem;
+        position: absolute;
+        top: 4rem;
+        right: 1rem;
+        border-radius: 7px;
+        border: 2px ridge;
+    }
 }
 </style>
