@@ -43,7 +43,7 @@ export default {
                 <span class="discount" v-if="product.discount !== null">{{ product.discount }}</span>
                 <span class="spacial_label" v-if="product.specialLabel !== null">{{ product.specialLabel }}</span>
             </div>
-            <div class="like" @click="likeToggle" :class="{ red_like: product.liked }">&hearts;</div>
+            <div class="like" @click.stop="likeToggle" :class="{ red_like: product.liked }">&hearts;</div>
         </div>
         <div class="product_description">
             <div class="brand">{{ product.brand }}'s</div>
