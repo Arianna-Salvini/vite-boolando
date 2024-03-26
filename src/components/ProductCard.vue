@@ -71,20 +71,18 @@ export default {
                 <div class="spacial_label py" v-if="product.specialLabel !== null">{{ product.specialLabel }}
                 </div>
                 <div class="discount py" v-if="product.discount !== null">{{ product.discount }}</div>
-                <div class="price">
-                    <div class="product_price " :class="{ bar_price: product.price.discountedPrice !== null }">
-                        {{ product.price.originalPrice }}€
-                    </div>
 
-                    <div class="discount_price red" v-if="product.price.discountedPrice !== null">
-                        {{ product.price.discountedPrice }}€
-                    </div>
+                <div class="product_price " :class="{ bar_price: product.price.discountedPrice !== null }">
+                    {{ product.price.originalPrice }}€
                 </div>
 
+                <div class="discount_price red" v-if="product.price.discountedPrice !== null">
+                    {{ product.price.discountedPrice }}€
+                </div>
 
+                <button class="close_modal" @click="modalToggle">&#10005</button>
             </div>
         </div>
-        <button class="close_modal" @click="modalToggle">&#10005</button>
     </div>
 
 </template>
@@ -122,6 +120,7 @@ export default {
         padding: 3rem;
         border-radius: 2rem;
         display: flex;
+        position: relative;
 
         .left,
         .right {
@@ -140,16 +139,18 @@ export default {
             margin: 2rem;
             align-items: flex-start;
         }
-    }
 
-    .close_modal {
-        background-color: antiquewhite;
-        padding: 0.2rem;
-        position: absolute;
-        top: 4rem;
-        right: 1rem;
-        border-radius: 7px;
-        border: 2px ridge;
+        .close_modal {
+            font-size: 1.3rem;
+            background-color: antiquewhite;
+            padding: 0.2rem;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            border-radius: 7px;
+            border: none
+        }
+
     }
 }
 </style>
