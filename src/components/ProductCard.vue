@@ -1,9 +1,17 @@
 <script>
 
+import { state } from '../state.js'
+
 export default {
     name: 'ProductCard',
     props: {
         product: Object,
+    },
+
+    data() {
+        return {
+            state
+        }
     },
 
     methods: {
