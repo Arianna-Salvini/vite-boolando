@@ -10,14 +10,20 @@ export default {
 
     data() {
         return {
-            state
+            state,
+            activeModal: false,
         }
     },
 
     methods: {
         likeToggle() {
             this.product.liked = !this.product.liked
+        },
+
+        modalToggle() {
+            this.activeModal = !this.activeModal
         }
+
 
 
     }
@@ -27,7 +33,7 @@ export default {
 
 <template>
     <!-- CARD -->
-    <div class="card">
+    <div class="card" @click="modalToggle">
         <div class="product_image">
             <div class="image_box">
                 <img class="item" :src="product.firstImage" alt="">
@@ -44,21 +50,21 @@ export default {
             <strong class="product_name">{{ product.productName }}</strong>
             <div class="price">
                 <span class="discount_price red" v-if="product.price.discountedPrice !== null">{{
-                    product.price.discountedPrice }}€</span>
+        product.price.discountedPrice }}€</span>
                 <span class="product_price " :class="{ bar_price: product.price.discountedPrice !== null }">{{
-                    product.price.originalPrice }}€</span>
+        product.price.originalPrice }}€</span>
             </div>
         </div>
     </div>
 
     <!-- Modale -->
 
-    <div class="modal">
+    <div class="modal" v-if="activeModal == true">
         <div class="modal_product_details">
             <div>{{ product.productName }}</div>
             <div>{{ product.brand }}</div>
         </div>
-        <button class="close_modal">&#10005</button>
+        <button class="close_modal" @click="modalToggle">&#10005</button>
     </div>
 
 </template>
