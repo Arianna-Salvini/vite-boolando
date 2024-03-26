@@ -33,7 +33,7 @@ export default {
 
 <template>
     <!-- CARD -->
-    <div class="card" @click="modalToggle">
+    <div class="card">
         <div class="product_image">
             <div class="image_box">
                 <img class="item" :src="product.firstImage" alt="">
@@ -47,12 +47,12 @@ export default {
         </div>
         <div class="product_description">
             <div class="brand">{{ product.brand }}'s</div>
-            <strong class="product_name">{{ product.productName }}</strong>
+            <strong class="product_name" @click="modalToggle">{{ product.productName }}</strong>
             <div class="price">
                 <span class="discount_price red" v-if="product.price.discountedPrice !== null">{{
-        product.price.discountedPrice }}€</span>
+                    product.price.discountedPrice }}€</span>
                 <span class="product_price " :class="{ bar_price: product.price.discountedPrice !== null }">{{
-        product.price.originalPrice }}€</span>
+                    product.price.originalPrice }}€</span>
             </div>
         </div>
     </div>
